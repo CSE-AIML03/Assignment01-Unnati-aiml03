@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID LAYOUT</title>
+    <style>
+       *,html{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+       } 
+       main{
+        height: 900px;
+        width: 1400px;
+        margin: 0px auto;
+        padding: 0px;
+        display: grid;
+        grid-template-columns:1fr ;
+        grid-template-rows: 200px 80px 500px 150px;
+        gap: 10px;
+
+       }
+       header,nav,footer{
+        background-color: rgb(182, 150, 212);
+        display: grid;
+    place-items: center;
+       }
+       section{
+        display: grid;
+        grid-template-columns:1fr 2fr ;
+         gap: 10px;
+       }
+       #left,#right{
+       display: grid;
+        place-items:center;
+       gap: 10px;
+       }
+       #left{
+        background-color: rgb(139, 202, 191);
+       }
+       #right{
+        background-color: bisque;
+       }
+    </style>
+</head>
+<body>
+    <main>
+    <header><h2>header</h2></header>
+        <nav><h2>Nav</h2></nav>
+        <section>
+            <div id="left"><h2>Left</h2></div>
+            <div id="right"><h2>Right</h2></div>
+        </section>
+        <footer><h2>footer</h2></footer>
+</main>
+</body>
+</html>

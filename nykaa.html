@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NYKAA FASHION</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <style>
+        .heading{
+            background-color: rgb(255, 255, 255);
+            flex-direction: column;
+            display: flex;
+            margin: 0px;
+            height: 50px;
+            width: 100%;
+            text-align: center;
+            align-items: center;
+            flex-wrap: wrap;
+            
+
+        }
+        nav ul{
+            list-style: none;
+        }
+        nav ul li{
+            display: inline;
+            padding-right: 4px;
+            cursor: pointer;
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-right: 18px;
+            padding-right: 18px;
+            font-weight: 850;
+
+
+        }
+        nav ul li:hover{
+            text-shadow: 1px  2px 1px rgb(132, 1, 65);
+            border-bottom: 1px solid rgb(255, 87, 179);
+        }
+       .login{
+        outline: none;
+        border: none;
+        color: rgb(255, 255, 255);
+        border-radius: 15%;
+        background-color: rgb(228, 18, 127);
+        height: 90px;
+        width: 85px;
+        font-weight: 900;
+        
+       }
+      #search{
+        height: 35px;
+        width: 250px;
+        font-size: 15px;
+        outline-color: rgb(191, 6, 111);
+       background-color:rgb(237, 231, 232) ;
+       font-weight: 300;
+       border: 0px;
+       border-radius: 4px;
+      }
+      #search:focus{
+        width: 305px;
+        height:45px ;
+      }
+      .sign{
+        height: 55px;
+        width: 250px;
+        color: rgb(219, 19, 86);
+        cursor: pointer;
+        background-color: white;
+        font-size: 15px;
+        border-radius: 7px;
+        font-weight: 900;
+      }
+      .sign:hover{
+        background-color: rgb(216, 218, 220);
+
+      }
+      .google{
+        height: 55px;
+        width: 250px;
+        background-color: white;
+        color: rgb(72, 68, 68);
+        font-size: 15px;
+        cursor: pointer;
+        font-weight: 900px;
+        border-radius: 7px;
+      }
+      .google:hover{
+        background-color: rgb(216, 218, 220);
+
+      }
+      #mobile{
+        height: 40px;
+      }
+      #mobile:focus{
+        outline-color: rgb(226, 43, 144);
+      }
+      .otp{
+        height: 40px;
+        border-radius: 7px;
+        background-color: rgb(234, 226, 226);
+        cursor: pointer;
+      }
+      .otp:hover{
+        background-color: rgb(207, 118, 167);
+      }
+      .bag{
+        outline: none;
+        cursor: pointer;
+        border: none;
+        background-color: rgb(255, 255, 255);
+         font-size: 35px;
+      }
+      .style{
+        height: 45px;
+        display: flex;
+        flex-direction: column;
+        
+        width: 100%;
+        background-image: url(https://as2.ftcdn.net/v2/jpg/02/25/66/27/1000_F_225662704_MxzyLtnZEIJNWWornMicOXZabmDc00TD.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0px;
+        padding: 0px;
+        font-size: 21px;
+      
+        
+      }
+      .style ul{
+        list-style: none;
+      }
+      .style ul li{
+        display: inline;
+        list-style: 30px;
+        flex-direction: column;
+        justify-content:center;
+        flex-wrap: wrap;
+        padding-right: 25px;
+        border-right: 2px solid black;
+        color: black;
+        font-weight: 900;
+        list-style-type: none;
+        text-transform: capitalize;
+        
+        
+      }
+      .style ul li:nth-child(4){
+        border-right: 0px;
+        padding-right: 0px;
+      }
+      .style ul li:hover{
+        color: rgb(143, 4, 66);
+        
+      }
+      .content{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+       height: 79px;
+      }
+      .content ul{
+        list-style: none;
+      }
+      .content ul li{
+        display: inline;
+       margin-right: 30px;
+        cursor: pointer;
+        font-size: 17px;
+        color: rgb(96, 94, 94);
+        
+      }
+      .content ul li:hover{
+       border-bottom: 3px solid rgb(241, 86, 143);
+ }
+      .image{
+        background-image: url(https://images-static.nykaa.com/uploads/fd873035-8f4d-4ab0-aa18-ecf306bd9124.gif);
+        height: 115px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .image2{
+        color: brown;
+        font-size: 20px;
+        font-weight: 600;
+        align-items: center;
+        text-align: center;
+        height: 115px;
+        width: 100%;
+        background-color: bisque;
+        text-transform: uppercase;
+        
+      }
+     .front{
+      display: flex;
+      flex-direction: column;
+     }
+     .container{
+      display: flex;
+      flex-direction:row;
+      flex-wrap: wrap;
+     }
+     
+     .product1{
+      background-image: url(https://tse2.mm.bing.net/th/id/OIP.I2LSCY8E_5KBsFnMbgRWfAHaHa?cb=ucfimg2&ucfimg=1&w=676&h=676&rs=1&pid=ImgDetMain&o=7&rm=3);
+      background-repeat: no-repeat;
+      background-size: contain;
+      height: 45vh;
+      width: 22vw;
+     border-radius: 6px;
+      margin:9px;
+      margin-top: 15px;
+       box-shadow: 4px 4px 25px;
+       background-color: black;
+
+     }
+     .product2{
+      background-image: url(https://tse1.mm.bing.net/th/id/OIP.39srDJ5O-n5LOCD5vWHrjAHaHa?cb=ucfimg2&ucfimg=1&w=1024&h=1024&rs=1&pid=ImgDetMain&o=7&rm=3);
+      background-repeat: no-repeat;
+      background-size: contain;
+      height: 45vh;
+      width: 22vw;
+     border-radius: 6px;
+      margin:9px;
+      margin-top: 15px;
+       box-shadow: 4px 4px 25px;
+       background-color: black;
+
+     }
+     .product3{
+      background-image: url(https://tse2.mm.bing.net/th/id/OIP.4nYwbO31dCRc2cNlRELFMwHaHa?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3);
+      background-repeat: no-repeat;
+      background-size: contain;
+      height: 45vh;
+      width: 22vw;
+     border-radius: 6px;
+      margin:9px;
+      margin-top: 15px;
+       box-shadow: 4px 4px 25px;
+       background-color: black;
+     }
+     .product4{
+      background-image: url(https://swissbeauty.in/cdn/shop/articles/a-valentine-s-day-makeup-gift-guide-for-every-beauty-lover-swiss-beauty.png?v=1676552651);
+      background-repeat: no-repeat;
+      background-size: contain;
+      height: 45vh;
+      width: 22vw;
+     border-radius: 6px;
+      margin:9px;
+      margin-top: 15px;
+       box-shadow: 4px 4px 25px;
+       background-color: rgb(35, 34, 34);
+     }
+     .shop{
+      border-radius: 20px;
+      color: rgb(226, 43, 125);
+      background-color: aliceblue;
+      height: 45px;
+      width: 79px;
+      margin-top: 260px;
+      margin-left: 30px;
+     }
+     button:hover{
+      color: aliceblue;
+      background-color: rgb(226, 43, 147);
+     }
+      .offer{
+        background-image: url(https://media.istockphoto.com/id/1345953932/vector/green-background-with-blurred-golden-lights-and-golden-snowflakes.jpg?s=612x612&w=0&k=20&c=Je90j3C_gykj0vKWsTRN7Lry-lCzVnpSqR4poAVs41Q=);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 150px;
+        width: 100%;
+        border-radius: 10px;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+
+      }
+      .secondoffer{
+        margin-top: 20px;
+        box-shadow: 1px 1px  15px black;
+      }
+      .kay{
+        margin: 10px;
+        padding: 10px;
+        height: 290px;
+        width: 1200px;
+      }
+      .kaybuy{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 300px;
+        width: 1200px;
+       
+        margin: 10px;
+        padding: 10px;
+        
+      }
+      .kayp1{
+         margin: 0px;
+            background-color: rgb(255, 255, 255);
+            cursor: pointer;
+           
+
+      }
+.kayp2{
+        display: flex;
+        height: 250px;
+        width:280px ;
+        margin: 2px;
+        padding: 2px;
+        margin-left: 12px;
+      
+      }
+      .kayp3{
+        display: flex;
+        height: 250px;
+        width:280px ;
+        margin: 2px;
+        padding: 2px;
+       margin-left: 12px;
+        
+        
+      }
+      .kayp4{
+        display: flex;
+       margin-left: 20px;
+        height: 250px;
+        width:280px;
+        margin: 2px;
+        padding: 2px;
+      }
+     .kaya{
+       display: flex;
+            background-color: white;
+           justify-content: center;
+            border-radius: 2px;
+           box-sizing: border-box;
+            height: 300px;
+            width: 300px;
+            align-items:center;
+            text-align: center;
+           flex-wrap: wrap;
+            
+     }
+      .kayt{
+        display: flex;
+       flex-direction: column;
+       justify-content: center;
+      text-transform: capitalize; 
+      }
+      .green{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 20px;
+        
+      }
+      .kayoffer{
+        margin-left: 15px;
+       
+      }
+      .idea{
+        background-color: blanchedalmond;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0px;
+        height: 280px;
+        width: 100%;
+      }
+     
+    .ad{
+      display: flex;
+      flex-direction: column;
+    }
+    .idea1{
+      margin-left: 20px;
+    }
+    .idea2{
+      margin-left: 20px;
+    }
+    .idea3{
+      margin-left: 20px;
+    }
+    
+    
+    </style>
+</head>
+<body>
+  <div class="style">
+      <ul>
+        <li> get app</li>
+        <li>location</li>
+        <li>gift card</li>
+        <li>help</li>
+        
+      </ul>
+
+  </div>
+    <div style="margin-top: 20px;" class="heading">
+        <img height="48px" width="90px" style="margin: 0px; margin-left: 0px; display: block;" src="https://tse2.mm.bing.net/th/id/OIP.uaW039svW6AN1RmIoL345AHaCb?cb=ucfimg2&ucfimg=1&w=1500&h=492&rs=1&pid=ImgDetMain&o=7&rm=3">
+    <nav>
+        <ul style="justify-content: centre;">
+            <li><b>categories</b></li>
+            <li><b>Brands</b></li>
+            <li><b>Luxe</b></li>
+             <li><b>Nykaa Fashion</b></li>
+             
+        </ul>
+    </nav>
+    <label>
+      <i class="fa-duotone fa-solid fa-magnifying-glass"></i>
+        <input id="search" placeholder="Search on Nykaa" name="Search on Nykaa" >
+    </label>
+    <button class="login" onclick="menu.hidden^=1">sign in</button>
+    <ul id="menu" hidden style="list-style-type: none; align-items: center;">
+       <h2 style="font-size: 30px;">Login or Sign up</h2>
+       <p style="color: rgb(125, 123, 123);">
+       Register now and get 2000 Nykaa<br> reward points instantly!
+        </p>
+        <input id="mobile" style="border-radius: 8px;" type="text" placeholder="mobile number" name="mobile number"> <button class="otp">Send OTP</button>
+        <p>
+           <button class="sign">Sign in with mobile number/E-mail </button>
+           </p>
+           <p>
+           <button class="google">Continue with google   🌐 </button>
+        </p>
+        
+    </ul>
+    <button class="bag"><span>&#128717</span></button>
+<hr color="black" >
+</div>
+<hr style="color: rgb(115, 112, 112); font-weight: 100;">
+<div class="content">
+<ul>
+  <li>Makeup</li>
+  <li>Hair</li>
+  <li>Applliances</li>
+  <li>Bath & Body</li>
+  <li>Natural</li>
+  <li>Mom & Baby</li>
+  <li>Health & Wellness</li>
+  <li>Men</li>
+  <li>Fragrance</li>
+  <li>Lengreie & Accessories</li>
+  </ul>
+<img height="76px" width="80px" style="cursor: pointer;" src="https://png.pngtree.com/png-clipart/20230513/original/pngtree-special-offer-vector-tag-banner-design-png-image_9159818.png">
+</div>
+<div class="front">
+<div class="image"></div>
+<div class="image2">
+  <h1>hello , holiday glow</h1>
+</div>
+ </div>
+ <div class="container">
+  <div class="product1">
+<button class="shop">Shop Now</button>
+</div>
+<div class="product2"><button class="shop">Shop Now</button></div>
+ 
+ 
+ <div class="product3"><button class="shop">Shop Now</button></div>
+ <div class="product4"><button class="shop">Shop Now</button></div>
+    </div>
+ <div class="offer">
+  <p style="width: 215px;height: 55px; margin-left: 430px; color: brown;background-color: aliceblue; text-align: center;align-items: center;font-weight: 700;font-size: 19px;border-radius: 5px;margin-top: 31px;border: 4px solid brown;">GET FLAT 300 OFF UPTO 2000</p>
+  <P style="width: 215px;height: 55px;color: aliceblue;background-color: brown;margin-left: 30px;text-align: center;align-items: center;font-weight: 700;font-size: 19px;border-radius: 5px;margin-top: 31px;border: 4px solid white;">GET FLAT 500 OFF UPTO 3000</P>
+ </div>
+   <div class="secondoffer">
+     <img height="110px" width="100%" src="https://images-static.nykaa.com/uploads/9cded922-9d54-4daf-b3f5-c290e95ad377.jpg?tr=cm-pad_resize,w-1800">
+
+   </div>
+ <div class="kay">
+  <img height="290px" width="1200px" src="https://images-static.nykaa.com/uploads/6e50a923-6552-4f48-bf8c-ae5c25e13a98.png?tr=cm-pad_resize,w-1800">
+ </div>
+ <div class="kaybuy">
+  <div class="kaya">
+ <div class="kayp1">
+  <img height="250px" width="280px" style="border-radius: 10px;" src="https://images-static.nykaa.com/uploads/235bef61-9ce9-43fb-81c2-09eba099a4c1.png?tr=cm-pad_resize,w-450">
+ <div class="kayt">
+  <span><h3>new shade</h3></span>
+ </div>
+</div>
+ </div>
+ <div class="kaya">
+ <div class="kayp2">
+  <img style="border-radius: 10px;" src="https://images-static.nykaa.com/uploads/5661e58f-368f-41d3-a6b4-05841acdce08.png?tr=cm-pad_resize,w-450">
+</div>
+<div class="kayt"><span><h3>Hydra Lipstick
+</h3></span></div>
+ </div>
+ <div class="kaya">
+ <div class="kayp3">
+  <img style="border-radius: 10px;" src="https://images-static.nykaa.com/uploads/1b0c29f7-41a4-4d6e-ab6f-66c42cc2e05f.png?tr=cm-pad_resize,w-450">
+ </div>
+ <div class="kayt"><span><h3> HD Setting Loose Powder</h3></span></div></div>
+ <div class="kaya">
+ <div class="kayp4">
+  <img style="border-radius: 10px;" src="https://images-static.nykaa.com/uploads/152a0f2e-5b49-4584-8f72-d2d9f569ef2f.png?tr=cm-pad_resize,w-450">
+ </div>
+ <div class="kayt"><span><h3>Kay Beauty Matte HD Setting Loose Powder</h3></span></div>
+ </div>
+ </div>
+ <div class="green">
+ <div class="olayoffer">
+  <img style="border-radius: 10px;" src="https://images-static.nykaa.com/uploads/d9d30ca1-0b03-4e68-a034-4b9b9ebd00d2.gif">
+ </div>
+ <div class="kayoffer">
+  <img style="border-radius: 10px;" src="https://images-static.nykaa.com/uploads/20a07a1a-4593-4458-8201-bc2c8478af76.gif">
+ </div>
+ </div>
+ <div class="ad">
+ <div style="background-color: blanchedalmond;" class="holiday">
+  <img height="140px" width="100%" src="https://images-static.nykaa.com/uploads/411ccd0c-c7e4-4fae-ac9f-6d0b404efae4.jpg?tr=cm-pad_resize,w-1800">
+ </div>
+ <div class="idea">
+  <div class="idea1">
+    <img height="240px" width="380px" style="border-radius: 10px;" src="https://images-static.nykaa.com/creatives/77e11c5f-3f16-4f7e-82c9-e75789a4e6e1/default.jpg?tr=cm-pad_resize,w-900">
+  </div>
+  <div class="idea2">
+    <img height="240px" width="380px" style="border-radius: 10px;" src="https://images-static.nykaa.com/creatives/e7449b52-ae92-46d5-bfda-b05590baf810/default.jpg?tr=cm-pad_resize,w-900">
+  </div>
+  <div class="idea3">
+    <img height="240px" width="380px" style="border-radius: 10px;" src="https://images-static.nykaa.com/creatives/c43f6320-751d-4a4a-a5b5-77f6fd3d281d/default.jpg?tr=cm-pad_resize,w-900">
+  </div>
+ </div>
+ <div class="tie">
+  <img height="120px" width="100%" src="https://images-static.nykaa.com/uploads/10097ec4-a610-4162-b6f2-6d31114ee2a5.jpg?tr=cm-pad_resize,w-1800">
+ </div>
+ </div>
+  </body>
+</html>
