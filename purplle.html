@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>purple</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <style>
+        .promo{
+            display: flex;
+            background-color: rgb(221, 196, 245);
+            flex-direction: row;
+            height: 50px;
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .purplepromo{
+            display: flex;
+           flex: 1;
+           
+        }
+        .purplepromo img{
+            height: 40px;
+            width: 80px;
+            margin: 5px;
+           
+
+        }
+        .purplepromo pre{
+            text-align: center;
+            font-weight: 600;
+        }
+        .promocode{
+            display: block;
+           flex: 2;
+            
+            margin: 12px;
+            background-color: whitesmoke;
+           
+            border-style: dashed;
+            border-color: rgb(115, 85, 143);
+            
+           
+        }
+        .download{
+            display: flex;
+            justify-content: right;
+            margin-right: 20px;
+            flex: 3;
+           
+        }
+        .download button{
+            border-radius: 10px;
+            background-color: blueviolet;
+             color: azure;
+              border: none;
+              height: 50px;
+              width: 90px;
+
+        }
+        .download :hover{
+            background-color: rgb(178, 147, 207);
+            color: rgb(80, 68, 92);
+        }
+       .content{
+        display: flex;
+        flex-direction: row;
+       height: 60px;
+       margin: 10px;
+       justify-content: space-evenly;
+       }
+       .search{
+        display: flex;
+       justify-content:center;
+       border: none;
+       height: 30px;
+       width: 190px;
+       border-bottom: 5px solid purple;
+       font-weight: 500;
+       }
+       .search:focus{
+        border: none;
+        outline: none;
+        border-bottom: 5px solid purple;
+       }
+
+       .logo{
+        display: flex;
+        justify-content: center;
+       }
+       .about{
+        display: flex;
+        justify-content: center;
+       font-size: 40px;
+       align-content: end;
+       }
+       .about:hover{
+       cursor: pointer;
+       }
+       nav ul{
+        list-style: none;
+       }
+       nav ul li{
+        display: inline;
+        font-size: 15px;
+        margin-left: 35px;
+        font-weight: 600;
+       text-align: center;
+       }
+       nav ul li:hover{
+        border-bottom: 5px solid purple;
+        color: purple;
+       }
+       .container{
+        display: flex;
+        flex-direction: row;
+       }
+       .product1 img{
+        height: 300px;
+        width: 300px;
+        margin-right: 20px;
+        box-shadow: 2px 2px 20px black;
+         
+       }
+       .product2 img{
+        height: 300px;
+        width: 300px;
+        margin-right: 20px;
+          box-shadow: 2px 2px 20px black;
+       }
+       .product3 img{
+        height: 300px;
+        width: 300px;
+        margin-right: 20px;
+         box-shadow: 2px 2px 20px black;
+       }
+       .product4 img{
+        height: 300px;
+        width: 300px;
+        margin-right: 20px;
+        box-shadow: 2px 2px 20px black;
+       }
+      .sell{
+        display: flex;
+        flex-direction: row;
+      }
+      .sell1 img{
+         height: 300px;
+        width: 300px;
+        margin-right: 20px;
+      }
+       .sell2 img{
+         height: 300px;
+        width: 300px;
+        margin-right: 20px;
+      }
+       .sell3 img{
+         height: 300px;
+        width: 300px;
+        margin-right: 20px;
+      }
+       .sell4 img{
+         height: 300px;
+        width: 300px;
+        margin-right: 20px;
+      }
+     .cart{
+        width: 300px;
+        color: purple;
+        border-radius: 5px;
+        cursor: pointer;
+        height: 30px;
+        background-color: white;
+      border-color: purple;
+      border-width: 1px;
+     }
+     .cart:hover{
+        color: rgb(255, 255, 255);
+        background-color: purple;
+     }
+     .pick{
+        display: flex;
+        flex-direction: row;
+     }
+     .pick1 img{
+        height: 200px;
+        width: 250px;
+        border-radius: 5px;
+     }
+     .pick2 img{
+        height: 200px;
+        width: 250px;
+        border-radius: 5px;
+     }
+     .pick3 img{
+        height: 200px;
+        width: 250px;
+        border-radius: 5px;
+     }
+     .pick4 img{
+        height: 200px;
+        width: 250px;
+        border-radius: 5px;
+     }
+     .pick1{
+        margin-left: 45px;
+     }
+      .pick2{
+        margin-left: 45px;
+     }
+      .pick3{
+        margin-left: 45px;
+     }
+      .pick4{
+        margin-left: 45px;
+     }
+     .add{
+       width:250px ;
+       color: purple;
+       border-radius: 7px;
+       border-color: purple;
+       border-width: 1px;
+       height: 30px;
+       background-color: white;
+     }
+     .add:hover{
+        color: white;
+        background-color: purple;
+     }
+     .select{
+        display: flex;
+        flex-direction: row;
+        margin-top: 40px;
+
+     }
+     .sale-product{
+        display: flex;
+        flex-direction: row;
+     }
+    .sale-product1 img{
+        height: 300px;
+        width: 310px;
+    }
+     .sale-product2 img{
+        height: 300px;
+        width: 310px;
+    }
+     .sale-product3 img{
+        height: 300px;
+        width: 310px;
+    }
+     .sale-product4 img{
+        height: 300px;
+        width: 310px;
+    }
+    .sale-prize{
+        display: contents;
+        flex-direction: column;
+    }
+    .offer{
+        display: flex;
+        flex-direction: row;
+    }
+   
+     .offer1 img{
+        height: 350px;
+        width: 300px;
+        margin-left: 15px;
+    }
+     .offer2 img{
+        height: 350px;
+        width: 300px;
+        margin-left: 15px;
+    }
+     .offer3 img{
+        height: 350px;
+        width: 300px;
+        margin-left: 15px;
+    }
+     .offer4 img{
+        height: 350px;
+        width: 300px;
+        margin-left: 15px;
+    }
+    .foot-panel{
+        height: 350px;
+        width: 1250px;
+        background-color: rgb(213, 208, 208);
+        margin-top: 10px;
+       display: flex;
+       justify-content: center;
+    }
+    .foot-panel ul{
+        list-style-type: none;
+        margin-top: 20px;
+    }
+    .foot-panel ul li{
+        margin-top: 10px;
+        color: rgb(87, 88, 88);
+    }
+    .foot{
+        display: flex;
+        flex-direction: row;
+        margin-top: 30px;
+    }
+    .need{
+        list-style-type: none;
+    }
+    .foot1{
+       display: flex;
+       justify-content: space-evenly;
+    }
+    .foot2{
+       display: flex;
+       justify-content: space-evenly;
+    }
+    .foot3{
+       display: flex;
+       justify-content: space-evenly;
+    }
+    
+
+    </style>
+</head>
+<body>
+    <div class="promo">
+        <div class="purplepromo">
+        <img src="https://media6.ppl-media.com/mediafiles/ecomm/promo/1728010487_p-icon-square-appfirst-.svg">
+     <pre>  ⭐️⭐️ FLAT Rs. 100 OFF on your first order! ⭐️⭐️</pre>
+</div>
+<div class="promocode">
+    Use Code: APPFIRST KUSTUV
+</div>
+<div class="download">
+    <button  >Download App</button>
+</div>
+    </div>
+    <div class="content">
+    
+<input class="search"  placeholder="What are you looking for ?" name="search">
+
+    
+    <div class="logo">
+        <img height="40px" src="https://media6.ppl-media.com/mediafiles/ecomm/promo/1728010486_purplle-logo.svg">
+        <img height="40px" src="https://media6.ppl-media.com/mediafiles/ecomm/promo/1728644752_join-elite-150.gif?tr=f-gif">
+    </div>
+    <div class="about">
+    💟 ✔️ 
+    </div>
+    </div>
+   <hr color="purple">
+    <nav>
+        <ul>
+            <li>SHOP CATEGORIES</li>
+            <li>BRANDS</li>
+            <li>OFFER</li>
+            <li>NEW</li>
+            <li>SPLURGE</li>
+            <li>MAGAZINE</li>
+            <li>ELITE OFFERS</li>
+            <li>MEN</li>
+            <li>WOMEN</li>
+            <li>KIDS</li>
+        </ul>
+    </nav>
+    <hr color="purple">
+    <div class="ad">
+        <img height="400px" src="https://media6.ppl-media.com/tr:w-1280,c-at_max,pr-true,dpr-2/mediafiles/ecomm/misc/1766749467_faces-canada-strobe-cream_2596x836.jpeg">
+    </div>
+    <h1 style="text-align: center;color: purple;">Handpicked For You</h1>
+    <h6 style="color: purple;text-align: center;">view all →</h6>
+    <div class="container">
+        <div class="product1">
+            <img src="https://media6.ppl-media.com/tr:h-250,w-250,c-at_max,l-image,i-AD_35x235_small_kJWM53nMn1.png,w-60,lfo-top_right,l-end,dpr-2/static/img/product/382669/pilgrim-australian-tea-tree-non-drying-anti-dandruff-shampoo-200ml-with-salicylic-acid-helps-reduce-visible-flakes-and-dandruff-recurrence_1_display_1760595500_9ddf67e9.jpg">
+             
+        </div>
+        <div class="product2">
+            <img src="https://media6.ppl-media.com/tr:h-250,w-250,c-at_max,l-image,i-AD_35x235_small_kJWM53nMn1.png,w-60,lfo-top_right,l-end,dpr-2/static/img/product/393781/good-vibes-cica-brightening-glow-sunscreen-50-gm_9_display_1761748038_96a3461d.jpg">
+            
+        </div>
+        <div class="product3">
+            <img src="https://media6.ppl-media.com/tr:h-250,w-250,c-at_max,l-image,i-AD_35x235_small_kJWM53nMn1.png,w-60,lfo-top_right,l-end,dpr-2/static/img/product/373264/maybelline-the-colossal-volum-express-waterproof-mascara-01-46_7_display_1668754513_27dc93b1.jpg">
+             
+        </div>
+        <div class="product4">
+            <img src="https://media6.ppl-media.com/tr:h-250,w-250,c-at_max,l-image,i-AD_35x235_small_kJWM53nMn1.png,w-60,lfo-top_right,l-end,dpr-2/static/img/product/353425/good-vibes-ubtan-day-cream-spf-30-50-g-10_8_display_1760618388_5aa8140d.jpg">
+        </div>
+        </div>
+        <div class="nybae">
+            <img height="270px" style="margin-top: 30px;" src="https://media6.ppl-media.com/tr:w-1280,c-at_max,pr-true,dpr-2/mediafiles/ecomm/misc/1764925368_ny_-___upto_50_2560x544.jpeg">
+        </div>
+        <h2 style="text-align: center;color: rgb(105, 104, 104);font-size: 25px;">The Best Sellers</h2>
+        <div class="sell">
+            <div class="sell1">
+                
+                <img src="https://media6.ppl-media.com//tr:h-750,w-750,c-at_max,dpr-2,q-40,f-avif/static/img/product/359601/good-vibes-rice-brightening-toner-pore-minimizing-hydrating-with-cucumber-no-alcohol-no-parabens-no-sulphates-no-mineral-oil-120-ml-1-77_2_display_1739967668_c33660fb.jpg">
+                <div class="sell-text">
+                    Rice Brightening Toner
+                </div>
+                <span><strong>&#8377;150/-</strong></span><span><strike>&#8377;179</strike></span><br>
+                <button class="cart">Add to Cart</button>
+            </div>
+            <div class="sell2">
+                <img src="https://media6.ppl-media.com/tr:h-250,w-250,c-at_max,dpr-2/static/img/product/403719/alps-goodness-rosemary-water-100-ml-rosemary-water-for-hair-hair-spray-for-hair-growth-1_1_display_1754922190_1222fc52.jpg">
+                <div class="sell-text">Rosemary Water (100 ml)</div>
+                <span><strong>&#8377;190/-</strong></span><span><strike>&#8377;230</strike></span><br>
+                 <button class="cart">Add to Cart</button>
+            </div>
+            <div class="sell3">
+                <img src="https://media6.ppl-media.com/tr:h-250,w-250,c-at_max,dpr-2/static/img/product/387634/alps-goodness-powder-beetroot-50-g-91-17-13-91_1_display_1727949118_90b28018.jpg">
+                <div class="sell-text">Powder - Beetroot (50 gm)</div>
+                <span><strong>&#8377;95/-</strong></span><span><strike>&#8377;110</strike></span><br>
+                 <button class="cart">Add to Cart</button>
+            </div>
+            <div class="sell4">
+                <img src="https://media6.ppl-media.com/tr:h-250,w-250,c-at_max,dpr-2/static/img/product/402636/pond-s-super-light-gel-hydrated-glow-100ml-98g-2-40-93_1_display_1756962959_a4bca607.jpg">
+                <div class="sell-text">Super Light Gel</div>
+                <span><strong>&#8377;198/-</strong></span><span><strike>&#8377;379</strike></span><br>
+                 <button class="cart">Add to Cart</button>
+            </div>
+        </div>
+        <div class="gift">
+            <img height="270px" style="margin-top: 20px;" src="https://media6.ppl-media.com/tr:w-1280,c-at_max,pr-true,dpr-2/mediafiles/ecomm/misc/1752149366_elite_newreminder_web.jpg">
+        </div>
+        <h2 style="color:purple;text-align: center;">Editor's Pick</h2>
+        <h6 style="text-align: center;color: purple;">View ALL →</h6>
+        <div class="pick">
+            <div class="pick1">
+                <img src="https://media6.ppl-media.com//tr:h-750,w-750,c-at_max,dpr-2,q-40,f-avif/static/img/product/380980/ny-bae-velvet-mousse-lipstick-spicy-rust-06_1_display_1760003083_14c83e62.jpg">
+                <div class="pick-text">
+                    <h2>NY Bae</h2>
+                    Dewy Drops lipstick- White Coffee
+                </div>
+                 <span><strong>&#8377;198/-</strong></span><span><strike>&#8377;379</strike></span><br>
+                
+                <button class="add">Add to cart</button>
+            </div>
+            <div class="pick2">
+                <img src="https://media6.ppl-media.com/tr:h-250,w-250,c-at_max,dpr-2/static/img/product/401562/good-vibes-vitamin-c-glow-light-moisturizer-200-gm_8_display_1764339131_1a0c1e05.jpg">
+                <div class="pick-text">
+                    <h2>Good Vibes</h2>
+                    Vitamin C Super Light Gel Moisturiser 
+                </div>
+              <span><strong>&#8377;198/-</strong></span><span><strike>&#8377;379</strike></span><br>
+                <button class="add">Add to cart</button>
+            </div>
+              <div class="pick3">
+                <img src="https://media6.ppl-media.com//tr:h-750,w-750,c-at_max,dpr-2,q-40,f-avif/static/img/product/361089/alps-goodness-aloe-vera-gel-99-percentage-pure-300ml_1_display_1725958606_f59e5b74.jpg">
+                <div class="pick-text">
+                    <h2>Alps Goodness</h2>
+                    Aloe Vera Gel infused with Rose Water 
+                </div>
+          <span><strong>&#8377;198/-</strong></span><span><strike>&#8377;379</strike></span><br>
+                <button class="add">Add to cart</button>
+            </div>
+              <div class="pick4">
+                <img src="https://media6.ppl-media.com//tr:h-750,w-750,c-at_max,dpr-2,q-40,f-avif/static/img/product/352093/good-vibes-orange-refreshing-face-gel-anti-ageing-hydrating-with-papaya-no-parabens-no-sulphates-no-mineral-oil-no-animal-testing-100-g-1_1_display_1702543521_5bb4e976.jpg">
+                <div class="pick-text">
+                    <h2>Good Vibes</h2>
+                    Orange Refreshing Face Ge
+                </div>
+            <span><strong>&#8377;198/-</strong></span><span><strike>&#8377;379</strike></span><br>
+                <button class="add">Add to cart</button>
+            </div>
+</div>
+<div class="select">
+     <div class="pick1">
+        <img src="https://media6.ppl-media.com//tr:h-750,w-750,c-at_max,dpr-2,q-40,f-avif/static/img/product/394991/good-vibes-cranberry-lip-balm-5-5-gm_1_display_1745218487_98a4f535.jpg">
+        <div class="pick-text">
+            <h2>Good Vibes</h2>
+            Cranberry Brightening Lip Balm
+        </div>
+         <span><strong>&#8377;198/-</strong></span><span><strike>&#8377;379</strike></span><br>
+        <button class="add">Add to cart</button>
+     </div>
+     <div class="pick2">
+        <img src="https://media6.ppl-media.com//tr:h-750,w-750,c-at_max,dpr-2,q-40,f-avif/static/img/product/275529/alps-goodness-tea-tree-salicylic-acid-apple-cider-vinegar-acne-control-facewash-100-ml-16_1_display_1733736266_8dea353f.jpg">
+        <div class="pick-text">
+            <h2>Alps Goodness</h2>
+            Acne Control Face wash For Oily Skin
+        </div>
+         <span><strong>&#8377;198/-</strong></span><span><strike>&#8377;379</strike></span><br>
+        <button class="add">Add to cart</button>
+     </div>
+     <div class="pick3">
+        <img src="https://media6.ppl-media.com//tr:h-750,w-750,c-at_max,dpr-2,q-40,f-avif/static/img/product/348742/good-vibes-serum-powered-beauty-acne-control-tea-tree-foaming-face-wash-150-ml_1_display_1712308203_83bb8a40.jpg">
+        <div class="pick-text">
+            <h2>Good Vibes</h2>
+            Tea Tree Acne Control Face Wash
+        </div>
+         <span><strong>&#8377;198/-</strong></span><span><strike>&#8377;379</strike></span><br>
+        <button class="add">Add to cart</button>
+     </div>
+     <div class="pick4">
+        <img src="https://media6.ppl-media.com/tr:h-235,w-235,c-at_max,l-image,i-1728286602_p-exclusive_j_99ur2f3.png,lfo-top_right,l-end,dpr-2/static/img/product/370240/good-vibes-deep-moisturizing-body-lotion-shea-butter-200-ml-1-12-67-12-18_1_display_1738229449_559cdada.jpg">
+        <div class="pick-text">
+            <h2>Good Vibes</h2>
+            Shea Butter Deep Moisturizing Body Lotion
+        </div>
+        <span><strong>&#8377;465</strong></span><span><strike>&#8377;789</strike></span><br>
+        <button class="add">Add to cart</button>
+     </div>
+</div>
+<div class="sale">
+    <img height="400px" style="margin-top: 30px;border-radius: 5px;" src="https://media6.ppl-media.com/tr:w-1280,c-at_max,pr-true,dpr-2/mediafiles/ecomm/misc/1766746426_web-1.jpg">
+</div>
+<div class="sale-prize">
+<div class="sale-product">
+    <div class="sale-product1">
+    <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1766828311_minimalist_900x1318.jpeg">
+    </div>
+    <div class="sale-product2">
+        <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1766597926_alps-goodness_900x1318.jpeg">
+    </div>
+     <div class="sale-product3">
+        <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1766828304_loreal-professionnel-matrix-and-biolage-schwarzkopf_900x1318.jpeg">
+    </div>
+     <div class="sale-product4">
+        <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1766771827_swiss-beauty_900x1318.jpeg">
+    </div>
+</div>
+<div class="sale-product">
+    <div class="sale-product1">
+        <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1766771812_maybelline-saturday_900x1318.jpeg">
+    </div>
+    <div class="sale-product2">
+        <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1766597940_dot-and-key_900x1318.jpeg">
+    </div>
+    <div class="sale-product3">
+        <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1766597944_good-vibes_900x1318.jpeg">
+    </div>
+    <div class="sale-product4">
+        <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1766828316_the-derma-co_900x1318.jpeg">
+    </div>
+</div>
+</div>
+<div style="margin-top: 20px;" class="mars">
+    <img height="265px" src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1750406597_web.jpg">
+</div>
+<div class="offer">
+    <div class="offer1">
+        <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1766754890_tresemme_621x796.jpeg">
+    </div>
+    <div class="offer1">
+        <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1766433204_la-french_621x796.png">
+    </div>
+    <div class="offer1">
+        <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1765970846_love_beauty_planet_621x796.jpeg">
+    </div>
+    <div class="offer1">
+        <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1766412816_ajmal_621x796.jpeg">
+    </div>
+</div>
+<div class="end">
+    <img height="265px" src="https://media6.ppl-media.com/tr:w-1280,c-at_max,pr-true,dpr-2/mediafiles/ecomm/misc/1747910790_web-5.jpg">
+</div>
+<div class="foot-panel">
+    <ul>
+        <li><strong>DISCOVER:</strong>Nail Art / Eye Makeup / Bridal Makeup / How To Do Makeup / Pimples / Stretchmark Removal / Best Eye Creams / Hairstyles / Burgundy Hair Colors / Best Facewashes For Men / Best Perfumes For Men / Skincare Tips</li>
+        <li><strong>SHOP MAKEUP:</strong>Lakme / Maybelline / Colorbar / L'oreal / Revlon / Avon / Elle18
+</li>
+        <li><strong>SKIN CARE:</strong>
+Bio Oil / Olay / Neutrogena / Lotus Herbals / VLCC / Kaya / Vichy / Nivea / Gillette / Park Avenue</li>
+        <li><strong>HAIR<br> PRODUCTS:</strong>L'oreal Professionnel / Schwarzkopf / Matrix Biolage / Livon Hair Gain / Biotique / Roots</li>
+        <li><strong>Fragrance</strong>Davidoff / Hugo Boss / Calvin Klein / Elizabeth Arden / Jaguar / Victoria's Secret
+</li>
+        <li><strong>ELECTRONICS:</strong>Philips / Wahl / Braun / Remington</li>
+    </ul>
+</div>
+<div class="foot">
+    <div class="foot1">
+        
+        <ul class="need">
+            <li><b>Purplle</b></li>
+            <li>About Us</li>
+            <li>Our Team</li>
+            <li>Career</li>
+            <li>Press</li>
+            <li>Sitemap</li>
+            <li>Investor Relation</li>
+        </ul>
+    </div>
+    <div class="foot2">
+       
+        <ul class="need">
+            <li><b>Privacy Info</b></li>
+            <li>Privacy Policy</li>
+            <li>Terms of Use</li>
+            <li>Return And Cancellation policy</li>
+        </ul>
+    </div>
+    <div class="foot3">
+     
+        <ul class="need">
+            <li><b>Need Help?</b></li>
+            <li>FAQ's</li>
+            <li>Contact us</li>
+        </ul>
+    </div>
+</div>
+<hr color="black">
+</body>
+</html>
