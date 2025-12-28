@@ -14,6 +14,7 @@
             margin: 0px;
             padding: 0px;
             box-sizing: border-box;
+            flex-wrap: wrap;
         }
         .purplepromo{
             display: flex;
@@ -69,6 +70,7 @@
        height: 60px;
        margin: 10px;
        justify-content: space-evenly;
+       flex-wrap: wrap;
        }
        .search{
         display: flex;
@@ -89,15 +91,25 @@
         display: flex;
         justify-content: center;
        }
-       .about{
+       .login{
         display: flex;
         justify-content: center;
-       font-size: 40px;
+       font-size: 30px;
        align-content: end;
+       width: 90px;
+       height: 45px;
+       text-align: center;
+       border-radius: 5px;
+       border: none;
+       background-color: purple;
+       color: white;
        }
-       .about:hover{
-       cursor: pointer;
+       .login:hover{
+        cursor: pointer;
+        background-color: white;
+        color: purple;
        }
+       
        nav ul{
         list-style: none;
        }
@@ -115,58 +127,80 @@
        .container{
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
        }
        .product1 img{
         height: 300px;
-        width: 300px;
+        width: 290px;
         margin-right: 20px;
         box-shadow: 2px 2px 20px black;
          
        }
        .product2 img{
         height: 300px;
-        width: 300px;
+        width: 290px;
         margin-right: 20px;
           box-shadow: 2px 2px 20px black;
        }
        .product3 img{
         height: 300px;
-        width: 300px;
+        width: 290px;
         margin-right: 20px;
          box-shadow: 2px 2px 20px black;
        }
        .product4 img{
         height: 300px;
-        width: 300px;
+        width: 290px;
         margin-right: 20px;
         box-shadow: 2px 2px 20px black;
+       }
+       .product1 :hover{
+        height: 320px;
+        width: 295px;
+        box-shadow: 2px 2px 20px purple;
+       }
+        .product2 :hover{
+        height: 320px;
+        width: 295px;
+        box-shadow: 2px 2px 20px purple;
+       }
+        .product3 :hover{
+        height: 320px;
+        width: 295px;
+        box-shadow: 2px 2px 20px purple;
+       }
+        .product4 :hover{
+        height: 320px;
+        width: 295px;
+        box-shadow: 2px 2px 20px purple;
        }
       .sell{
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
       }
       .sell1 img{
          height: 300px;
-        width: 300px;
+        width: 290px;
         margin-right: 20px;
       }
        .sell2 img{
          height: 300px;
-        width: 300px;
+        width: 290px;
         margin-right: 20px;
       }
        .sell3 img{
          height: 300px;
-        width: 300px;
+        width: 290px;
         margin-right: 20px;
       }
        .sell4 img{
          height: 300px;
-        width: 300px;
+        width: 290px;
         margin-right: 20px;
       }
      .cart{
-        width: 300px;
+        width: 290px;
         color: purple;
         border-radius: 5px;
         cursor: pointer;
@@ -182,6 +216,7 @@
      .pick{
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
      }
      .pick1 img{
         height: 200px;
@@ -232,11 +267,13 @@
         display: flex;
         flex-direction: row;
         margin-top: 40px;
+        flex-wrap: wrap;
 
      }
      .sale-product{
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
      }
     .sale-product1 img{
         height: 300px;
@@ -255,12 +292,14 @@
         width: 310px;
     }
     .sale-prize{
-        display: contents;
+        display: flex;
         flex-direction: column;
+
     }
     .offer{
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
     }
    
      .offer1 img{
@@ -290,6 +329,7 @@
         margin-top: 10px;
        display: flex;
        justify-content: center;
+       flex-wrap: wrap;
     }
     .foot-panel ul{
         list-style-type: none;
@@ -306,6 +346,10 @@
     }
     .need{
         list-style-type: none;
+
+    }
+    .need li:hover{
+        color: purple;
     }
     .foot1{
        display: flex;
@@ -346,7 +390,7 @@
         <img height="40px" src="https://media6.ppl-media.com/mediafiles/ecomm/promo/1728644752_join-elite-150.gif?tr=f-gif">
     </div>
     <div class="about">
-    💟 ✔️ 
+    <button class="login">Login</button>
     </div>
     </div>
    <hr color="purple">
@@ -366,7 +410,7 @@
     </nav>
     <hr color="purple">
     <div class="ad">
-        <img height="400px" src="https://media6.ppl-media.com/tr:w-1280,c-at_max,pr-true,dpr-2/mediafiles/ecomm/misc/1766749467_faces-canada-strobe-cream_2596x836.jpeg">
+        <img height="400px" style="flex-wrap: wrap;display: flex;" src="https://media6.ppl-media.com/tr:w-1280,c-at_max,pr-true,dpr-2/mediafiles/ecomm/misc/1766749467_faces-canada-strobe-cream_2596x836.jpeg">
     </div>
     <h1 style="text-align: center;color: purple;">Handpicked For You</h1>
     <h6 style="color: purple;text-align: center;">view all →</h6>
@@ -572,7 +616,7 @@ Bio Oil / Olay / Neutrogena / Lotus Herbals / VLCC / Kaya / Vichy / Nivea / Gill
     <div class="foot1">
         
         <ul class="need">
-            <li><b>Purplle</b></li>
+            <li><b><h1>Purplle</h1></b></li>
             <li>About Us</li>
             <li>Our Team</li>
             <li>Career</li>
@@ -584,7 +628,7 @@ Bio Oil / Olay / Neutrogena / Lotus Herbals / VLCC / Kaya / Vichy / Nivea / Gill
     <div class="foot2">
        
         <ul class="need">
-            <li><b>Privacy Info</b></li>
+            <li><b><h4>Privacy Info</h4></b></li>
             <li>Privacy Policy</li>
             <li>Terms of Use</li>
             <li>Return And Cancellation policy</li>
@@ -593,7 +637,7 @@ Bio Oil / Olay / Neutrogena / Lotus Herbals / VLCC / Kaya / Vichy / Nivea / Gill
     <div class="foot3">
      
         <ul class="need">
-            <li><b>Need Help?</b></li>
+            <li><b><h4>Need Help?</h4></b></li>
             <li>FAQ's</li>
             <li>Contact us</li>
         </ul>
